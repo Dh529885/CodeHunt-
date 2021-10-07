@@ -1,4 +1,5 @@
 // Require and setup Depencies
+const { application } = require('express');
 const express = require('express');
 const codeRouter = express.Router();
 const Codehunt = require('../models/codehunt.js');
@@ -13,7 +14,9 @@ codeRouter.get('/seed', (req, res) => {
       res.redirect('/codehunt');
     });
   });
-
+application.get('/', (req,res) => {
+    res.redirect('/codehunt');
+})
 // Index
 codeRouter.get('/', (req, res) => {
   Codehunt.find({}, (error, allCodeHunt) => {
