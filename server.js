@@ -12,6 +12,9 @@ require('dotenv').config();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
+app.get('/', (req,res) => {
+    res.redirect('/codehunt');
+})
 
 // Routes / Controllers
 const codeControllers = require("./controllers/code-controllers.js");
