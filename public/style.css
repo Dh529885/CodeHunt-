@@ -1,6 +1,7 @@
 body {
     background-color:#151515 ;
     margin: 0;
+    
 }
 
 .wrapper {
@@ -11,6 +12,7 @@ body {
 
 pre {
 margin: 0;
+font-size: 1.8rem;
 }
 
 #code-index {
@@ -21,7 +23,7 @@ margin: 0;
 .line-numbers {
     color: #797979 ;
     font-family: monospace;
-    text-align: front;
+    text-align: front;  
 }
 
 textarea {
@@ -146,7 +148,7 @@ p {
         text-decoration: underline;
         color: #268bd2;
   }
-  .redBtn {
+  .deleteBtn {
 display: inline-block;
 padding: .25rem .5rem;
 border:0.1em #797979;
@@ -159,13 +161,33 @@ font-weight:500px;
 color:#797979;
 text-align:center;
 transition: all 0.2s;
+font-size: 14px;
   }
-  .redBtn:hover{
+  .deleteBtn:hover{
     color:seashell;
-    background-color:#151515;
+    background-color:red;
     }
-
-        .code-size {
-        font-weight: lighter;
-        resize: none;
+    .editBtn {
+        display: inline-block;
+        padding: .25rem .5rem;
+        border:0.1em #797979;
+        margin:0 0.3em 0.3em 0;
+        border-radius:0.12em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family:monospace;
+        font-weight:500px;
+        color:#797979;
+        text-align:center;
+        transition: all 0.2s;
+        font-size: 14px;
+          }
+          .editBtn:hover{
+            color:seashell;
+            background-color:blue;
+            }
+        .deleteandeditBtn {
+            display: flex;
+            flex-direction: row;
+            
         }

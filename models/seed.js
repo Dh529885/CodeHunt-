@@ -1,20 +1,30 @@
 module.exports = [
     {
-        name: ` ## How to use Codehunt?`,
-        code: `To make a new entry, click "New" on the top right`,
-    },
-    {
-        name: ` ## Welcome to CodeHunt!`,
-        code: `Sharing & storing your codes should be easy, but there isn't many options out there. 
-    What if I want to show you something I'm seeing or I'm working on? That's where we
-    use pastebins or Haste.
-    
-    CodeHunt is easy to use and you are now able to store your code snippet in one location.`
-    },
-    {
-        name: ` My Code Snippets`,
-        code: `CodeHunt is easy to use and you are now able to store your code snippet in one location`,
-        
+        name: `Example`,
+        code: ` .editBtn {
+            display: inline-block;
+            padding: .25rem .5rem;
+            border:0.1em #797979;
+            margin:0 0.3em 0.3em 0;
+            border-radius:0.12em;
+            box-sizing: border-box;
+            text-decoration:none;
+            font-family:monospace;
+            font-weight:500px;
+            color:#797979;
+            text-align:center;
+            transition: all 0.2s;
+            font-size: 14px;
+              }
+              .editBtn:hover{
+                color:seashell;
+                background-color:blue;
+                }
+            .deleteandeditBtn {
+                display: flex;
+                flex-direction: row;
+                
+            }`,
     },
     
 ];

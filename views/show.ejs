@@ -24,25 +24,30 @@
                 <h1>
                     <%=codehunts.name; %>
                 </h1> 
-                <pre><code class="code-size"><%=codehunts.code; %></code></pre> <br> 
+                <pre><code ><%=codehunts.code; %></code></pre> <br> 
                 
                 <!-- Delete Button -->
+                <div class="deleteandeditBtn">
+                    <div>
                 <form action="/codehunt/<%=codehunts._id%>?_method=DELETE" method="POST">
                     <input 
                     type="submit" 
                     value="Delete" 
-                    class="redBtn" />
+                    class="deleteBtn" />
                 </form>
-            
+            </div>
                 <!-- Edit Button -->
+                <div>
                 <form
                 action="/codehunt/<%=codehunts._id%>/edit">
                 <input
                   type="submit"
                   value="Edit "
-                  class="redBtn"/>
+                  class="editBtn"/>
+                </div>
+                </div>
                 
-               
+        </div>
         </div>
 </body>
 
